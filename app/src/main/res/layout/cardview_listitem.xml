@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="@dimen/cardViewMarginLateral"
+    android:layout_marginEnd="@dimen/cardViewMarginLateral"
+    app:cardCornerRadius="@dimen/listItemCornerRadius"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/ownerCardViewPadding">
+
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="@dimen/ownerAvatarSize"
+            android:layout_height="@dimen/ownerAvatarSize"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars"
+            android:contentDescription="@string/avatar" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/ListItemsTV"
+            android:textAppearance="@style/ListItemsHeadline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_avatar"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_longitude"
+            style="@style/ListItemsTV"
+            android:text="@string/longitude"
+            android:textAppearance="@style/ListItemsInfo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_avatar"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+        <TextView
+            android:id="@+id/tv_latitude"
+            style="@style/ListItemsTV"
+            android:text="@string/latitude"
+            android:textAppearance="@style/ListItemsInfo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_avatar"
+            app:layout_constraintTop_toBottomOf="@+id/tv_longitude" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
+
+

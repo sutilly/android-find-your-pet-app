@@ -1,0 +1,80 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ownerDetailFragment.OwnerDetail">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:theme="@style/actionBarTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentScrim="@color/secondaryLightColor"
+            app:title="@string/app_name"
+            app:expandedTitleMarginStart="@dimen/expandedTitleStartMargin"
+            app:expandedTitleGravity="top"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/secondaryLightColor"
+                android:orientation="vertical"
+                android:animateLayoutChanges="false"
+                app:layout_collapseMode="parallax"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_numberOfMissingPets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:textAppearance="@style/ExpandedToolBarMissingPets"
+                    android:layout_marginStart="@dimen/collapsibleToolbarItemsMarginLeft"
+                    android:layout_marginTop="@dimen/collapsibleToolbarItemsMarginTop"
+                    android:text="@string/petsAreMissing"/>
+
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/sw_showOnlyMissingPets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="@string/switchLabel"
+                    android:layout_marginStart="@dimen/collapsibleToolbarItemsMarginLeft"
+                    android:layout_marginBottom="@dimen/collapsibleToolbarItemsMarginBottom" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Dark" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_missingPets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fabButtonMargin"
+        android:src="@drawable/ic_find"
+        android:scaleType="center"
+        app:layout_anchor="@id/appBarLayout"
+        app:layout_anchorGravity="bottom|right"
+        android:contentDescription="@string/show_pets_on_map" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_pets"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

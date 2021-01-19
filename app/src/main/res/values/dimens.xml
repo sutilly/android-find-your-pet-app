@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- owner overview | main fragemtn -->
+    <dimen name="progressBarMarginsTopBottom">-6dp</dimen>
+    <!-- list items | card view -->
+    <dimen name="ownerAvatarSize">45dp</dimen>
+    <dimen name="ownerCardViewPadding">12dp</dimen>
+    <dimen name="ownerCardViewMarginTop">8dp</dimen>
+    <dimen name="cardTextViewsMarginLeft">12dp</dimen>
+    <dimen name="cardTextViewsMarginRight">16dp</dimen>
+    <dimen name="cardTextViewsMarginTop">8dp</dimen>
+    <dimen name="cardViewMarginLateral">4dp</dimen>
+    <!-- detail fragment | fab button -->
+    <dimen name="fabButtonMargin">16dp</dimen>
+    <!-- detail fragment | owner card view -->
+    <dimen name="expandedTitleStartMargin">24dp</dimen>
+    <dimen name="ownerCardViewSize">100dp</dimen>
+    <dimen name="ownerCardRadius">50dp</dimen>
+    <!-- detail fragment | text views in collapsible toolbar -->
+    <dimen name="collapsibleToolbarItemsMarginTop">80dp</dimen>
+    <dimen name="collapsibleToolbarItemsMarginBottom">12dp</dimen>
+    <dimen name="collapsibleToolbarItemsMarginLeft">24dp</dimen>
+    <dimen name="fragmentContainerWidthandHeight">0dp</dimen>
+    <dimen name="listItemCornerRadius">3dp</dimen>
+</resources>

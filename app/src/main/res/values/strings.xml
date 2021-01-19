@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Find Your Pet!</string>
+    <string name="switch_showOnlyMissingPets">Show only missing pets</string>
+    <string name="longitude">longitude</string>
+    <string name="latitude">latitude</string>
+    <string name="petsAreMissing">%1$d pets are missing</string>
+    <string name="petIsMissing">%1$d pet is missing</string>
+    <string name="noPetIsMissing">No pet is missing</string>
+    <string name="switchLabel">Show only missing pets</string>
+    <string name="show_pets_on_map">show pets on map</string>
+    <string name="XIsMissing">Pet %1$s is missing</string>
+    <string name="XIsNotMissing">Pet %1$s</string>
+    <string name="mapUser">Owner %1$s</string>
+    <string name="avatar">avatar</string>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- text views list items | layout -->
+    <style name="ListItemsTV">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/cardTextViewsMarginLeft</item>
+        <item name="android:layout_marginEnd">@dimen/cardTextViewsMarginRight</item>
+    </style>
+
+    <!-- text views list items | text appearance -->
+    <style name="ListItemsHeadline" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/fjalla_one</item>
+        <item name="android:fontFamily">@font/fjalla_one</item>
+        <item name="android:textSize">21sp</item>
+    </style>
+
+    <style name="ListItemsInfo" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/cantarell</item>
+        <item name="android:fontFamily">@font/cantarell</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!-- owner detail fragment toolbar -->
+    <style name="actionBarTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="fontFamily">@font/fjalla_one</item>
+        <item name="android:fontFamily">@font/fjalla_one</item>
+        <item name="colorAccent">@color/primaryColor</item>
+    </style>
+
+    <style name="ExpandedToolBarMissingPets" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+</resources>

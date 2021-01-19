@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_main.xml"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.findmypet.mainFragment.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_ownerDetail"
+            app:destination="@id/ownerDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/ownerDetail"
+        android:name="com.example.findmypet.ownerDetailFragment.OwnerDetail"
+        android:label="fragment_owner_detail"
+        tools:layout="@layout/fragment_owner_detail" >
+        <argument
+            android:name="ownerId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_ownerDetail_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.example.findmypet.mapsFragment.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" >
+        <argument
+            android:name="ownerId"
+            app:argType="integer" />
+    </fragment>
+</navigation>
